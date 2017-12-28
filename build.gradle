@@ -1,0 +1,29 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.9.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+group = 'io.github.trajakovic.kafka'
+version = '1.0.0'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+bootRepackage {
+	mainClass = 'io.github.trajakovic.kafka.configurer.KafkaPropertyMerger'
+}
+
+dependencies {
+}
