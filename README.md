@@ -10,11 +10,11 @@ Resulting jar is in ./build/libs
 
 ## Usage
 
-  * ```
-       $ PREFIX_THIS_IS_PROPERTY_FROM_ENVIRONMENT="Prefixed with PREFIX_, but case is ignored" \
-           java -jar ./build/libs/environment-to-property-merger-2.0.0.jar ./example/example1.properties PREFIX_
+  *  ```
+     $ PREFIX_THIS_IS_PROPERTY_FROM_ENVIRONMENT="Prefixed with PREFIX_, but case is ignored" \
+         java -jar ./build/libs/environment-to-property-merger-2.0.0.jar ./example/example1.properties PREFIX_
      ```
-      * output: 
+      output: 
           ```
           # INFO: Using environment variable prefix: prefix_
           # MERGED_WITH: https://github.com/trajakovic/environment-to-property-merger
@@ -23,11 +23,11 @@ Resulting jar is in ./build/libs
           second.property.in.example1=this is second line
           first.property.from.example1.file=just for demonstration
           ```
- * ```
+ *  ```
     $ PREFIX_SECOND_PROPERTY_IN_EXAMPLE1="Property from environment variable is overriding existing one" \
        java -jar ./build/libs/environment-to-property-merger-2.0.0.jar ./example/example1.properties PREFIX_
     ```
-      * output:
+      output:
          ```
          # INFO: Using environment variable prefix: prefix_
          # MERGED_WITH: https://github.com/trajakovic/environment-to-property-merger
@@ -39,7 +39,7 @@ Resulting jar is in ./build/libs
    $ PREFIX_MISSING_FILE_IS_OK=ok PREFIX_SECOND_PROPERTY=second \
        java -jar ./build/libs/environment-to-property-merger-2.0.0.jar /missing/property/file PREFIX_
    ``` 
-     * output:
+     output:
         ```
         # INFO: Missing input file /missing/property/file
         # INFO: Using environment variable prefix: prefix_
@@ -52,7 +52,7 @@ Resulting jar is in ./build/libs
    $ USE_MINUS_TO_DENOTE_EMPTY_PREFIX=- \
        java -jar ./build/libs/environment-to-property-merger-2.0.0.jar /missing/property/file -
    ``` 
-     * output:
+     output:
        ```
         ye, here you'll get all environment variables as property files :)
        ```
