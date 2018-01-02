@@ -14,7 +14,7 @@ apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
 
 group = 'io.github.trajakovic.kafka'
-version = '1.0.0'
+version = '2.0.0'
 sourceCompatibility = 1.8
 
 repositories {
@@ -22,7 +22,7 @@ repositories {
 }
 
 bootRepackage {
-	mainClass = 'io.github.trajakovic.kafka.configurer.KafkaPropertyMerger'
+	mainClass = 'io.github.trajakovic.kafka.configurer.EnvironmentToPropertyMerger'
 }
 
 dependencies {
