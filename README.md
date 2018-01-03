@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/trajakovic/environment-to-property-merger.svg?branch=master)](https://travis-ci.org/trajakovic/environment-to-property-merger)
 # Environment to property merger
 
 A missing link between environment variables and *JAVA* .properties files.
