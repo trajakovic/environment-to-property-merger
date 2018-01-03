@@ -15,6 +15,7 @@ deploy:
   provider: releases
   api_key:
     secure: PavnghLaqvgrj8MbbbWte9nkxzNLdKuDr75nd/vbZ6UMGBryw1K0G6RGG55VOjPbVNjhLni2DhRzrb3FHjdHxico1AA8W3YRqgumLsZg1C8HnMWtktIbBRgkyJnHsHpmYpitN35yo8DbS9FO1PrNF8I0nJ/yRL7QtdgmsFG0rFWnFtIc9Op4U6LfwDPvNPBrYthXUNOYwR9td6w4nxpXbtDV4VF7E+6pV7ZxGgmgEkxQaCXNAT6WzRK3DDI4sANb/VaMUCNX7NsxZJxLvvTy4zeW/CLin/oQegqVa1BlgszMmbuT/uo0fg7MZ9oCaeQmugtN//GA7H7WvIBGg29qZLrlrr6IPuGpjIwWWW+snMGiJpIV2cDbLUBi7107kXL2BDWYcumqzTfCMMrdVFovvU3RNkq7hMIBuPUmD7Mk6t1xJh0RuOvZ+is0zlS7Y3p967LSfPhVKFk18w50Esgx91VE/IJJWKG9fYhtM1/qEb+tOgWrdeX1l/9Y+6z6t/kMhn8wb31LXIvvnBCz/fuRNuAdfwNi1cUa0sJKN18EPPCSoiqEr52eoRRkBpyehjwJb0Bhtu2lpUMuaeTPAFuQO7Xzq5Gl/xmqzm5DuxQ0r69J6Bi/palgSD3DUksJAGHGAUDkVWLX1ijpXPgE1VPswO3b+ZJ4mbe3w0c6RG+fF0E=
+  file_glob: true
   file: "./build/libs/environment-to-property-merger-*.jar"
   skip_cleanup: true
   on:
